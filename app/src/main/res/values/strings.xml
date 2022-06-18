@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WelCalm Clone</string>
+    <string name="greetingText1">WelCalm Clone, işe giriş sürecinde sana yardımcı olmak için hazır!</string>
+    <string name="tebrikler">Tebrikler!</string>
+    <string name="greetingText2">Burada ihtiyacın olan tüm bilgileri bulabilir ve yol arkadaşların ile tanışabilirsin.</string>
+    <string name="uygulamaya_devam_et">Uygulamaya Devam Et</string>
+    <string name="aramiza_hosgeldin">Aramıza\nHoşgeldin!</string>
+    <string name="lutfen_giriniz">Lütfen e-posta adresinizi ve şifrenizi giriniz.</string>
+    <string name="e_posta">E-posta</string>
+    <string name="sifre">Şifre</string>
+    <string name="sifremi_unuttum">Şifremi Unuttum</string>
+    <string name="giris">Giriş</string>
+</resources>
