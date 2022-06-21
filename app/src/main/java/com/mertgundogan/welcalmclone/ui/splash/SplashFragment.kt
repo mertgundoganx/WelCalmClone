@@ -1,12 +1,10 @@
 package com.mertgundogan.welcalmclone.ui.splash
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.mertgundogan.welcalmclone.databinding.FragmentSplashBinding
@@ -50,7 +48,8 @@ class SplashFragment : Fragment() {
     }
 
     private fun actionToHomeFragment() {
-        Toast.makeText(this.context, "HOME", Toast.LENGTH_SHORT).show()
+        val action = SplashFragmentDirections.actionSplashFragmentToHomeFragment()
+        findNavController().navigate(action)
     }
 
     override fun onDestroyView() {

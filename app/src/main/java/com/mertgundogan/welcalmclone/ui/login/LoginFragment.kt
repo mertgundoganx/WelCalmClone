@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.mertgundogan.welcalmclone.databinding.FragmentLoginBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -61,7 +61,8 @@ class LoginFragment : Fragment() {
     }
 
     private fun actionToHome() {
-        Toast.makeText(this.context, "BASARILI", Toast.LENGTH_SHORT).show()
+        val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+        findNavController().navigate(action)
     }
 
     override fun onDestroyView() {
